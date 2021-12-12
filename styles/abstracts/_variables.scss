@@ -1,3 +1,20 @@
 // FONTS
-$Roboto: 'Roboto', sans-serif;
-$Shrikland: 'Shrikhand', cursive;
+$Roboto: "Roboto", sans-serif;
+$Shrikland: "Shrikhand", cursive;
+
+// COLOR THEME
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+
+// ADDITIONAL COLORS
+$color-primary-light: change-color(
+  $color-primary,
+  $saturation: 100%,
+  $lightness: 96%
+);
+
+$color-lightgrey: #f6f6f6;
+
+//MISCELLANEOUS 
+$checkbox-width: 80px;

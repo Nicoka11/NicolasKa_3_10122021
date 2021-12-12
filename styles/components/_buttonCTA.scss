@@ -1,0 +1,24 @@
+.buttonCTA {
+  background-image: linear-gradient($color-secondary, $color-primary);
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: white;
+  @include box-shadow-base;
+  width: fit-content;
+  transition: all 0.3s ease;
+
+  &--secondary {
+    @extend .buttonCTA;
+    padding: 15px 15px;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    @include box-shadow-base--hover;
+  }
+
+  &:active {
+    transform: translateY(0px);
+    @include box-shadow-base;
+  }
+}

@@ -1,3 +1,8 @@
 body {
     font-family: $Roboto;
 }
+
+@mixin font-logo {
+    font-family: $Shrikland;
+    font-size: 1.3rem;
+}

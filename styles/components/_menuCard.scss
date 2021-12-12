@@ -1,0 +1,82 @@
+.menuCard {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    .menuCard__heading {
+      max-width: calc(255px - $checkbox-width);
+    }
+    .menuCard__checkIcon {
+      right: 0px;
+    }
+
+    .menuCard__checkIcon__icon {
+      transform: rotate(0deg);
+    }
+
+    .menuCard__infos {
+      width: calc(100% - $checkbox-width);
+    }
+  }
+
+  &__content {
+    padding: 15px;
+  }
+
+  &__heading {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 255px;
+    font-weight: 700;
+    @include transition-all-base;
+  }
+
+  &__infos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include transition-all-base;
+
+    &__desc {
+      margin-top: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    margin-left: 20px;
+    align-self: flex-end;
+  }
+
+  &__right {
+    width: 100%;
+  }
+
+  &__checkIcon {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    background-color: $color-tertiary;
+    color: white;
+    font-size: 1.65rem;
+    height: 100%;
+    width: $checkbox-width;
+    right: -80px;
+    @include transition-all-base;
+
+    &__icon {
+      transform: rotate(-200deg);
+      @include transition-all-base;
+      transition-delay: 0.1s;
+    }
+  }
+}

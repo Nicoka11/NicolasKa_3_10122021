@@ -1,0 +1,29 @@
+.header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  padding: 5px 0;
+
+  &__backBtn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &:hover {
+        i {
+            transform: translateX(2px);
+            color: $color-primary;
+        }
+    }
+
+    & i {
+        @include transition-all-base;
+    }
+  }
+}
+
+.logo {
+  @include font-logo;
+}

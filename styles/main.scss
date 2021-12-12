@@ -1,6 +1,24 @@
 //Abstracts
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 // Base
 @import "base/reset";
 @import "base/typography";
+
+// Components
+@import "components/menuCard";
+@import "components/buttonCTA";
+@import "components/header";
+@import "components/explainCard";
+
+//layouts
+@import "layout/explainList";
+
+.components {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 10px;
+  align-items: center;
+}

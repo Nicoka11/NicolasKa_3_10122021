@@ -1,0 +1,46 @@
+.explainCard {
+  font-size: 0.9rem;
+  position: relative;
+  counter-increment: explain-list-counter;
+  background-color: $color-lightgrey;
+  width: 100%;
+  padding: 15px 30px;
+  border-radius: 20px;
+  @include box-shadow-base;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &::before {
+    font-size: 0.8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    content: counter(explain-list-counter);
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-primary;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+  &__text {
+    &__icon {
+      margin-right: 15px;
+    }
+  }
+
+  &--active {
+    @extend .explainCard;
+    background-color: $color-primary-light;
+
+    & .explainCard__text__icon i {
+        color: $color-primary
+    }
+  }
+}
