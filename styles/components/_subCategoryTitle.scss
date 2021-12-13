@@ -1,0 +1,16 @@
+
+.subCategoryTitle {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: $color-tertiary;
+        width: 40px;
+        height: 3px;
+        left: 0;
+        bottom: -7px;
+    }
+}

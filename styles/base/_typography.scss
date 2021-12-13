@@ -6,3 +6,12 @@ body {
     font-family: $Shrikland;
     font-size: 1.3rem;
 }
+
+@mixin font-description($font-size: 1rem) {
+    font-weight: 300;
+    font-size: $font-size;
+}
+@mixin font-cardTitle($font-size: 1rem) {
+    font-weight: 500;
+    font-size: $font-size;
+}

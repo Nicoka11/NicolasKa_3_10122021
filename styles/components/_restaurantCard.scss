@@ -1,0 +1,59 @@
+.restaurantCard {
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+  @include box-shadow-base;
+
+  &__image {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 150px;
+
+    & img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__details {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & h3 {
+      @include font-cardTitle;
+    }
+
+    & p {
+      @include font-description;
+    }
+
+    & i {
+      font-size: 1.3rem;
+      margin-right: 10px;
+    }
+  }
+
+  &--new {
+    position: relative;
+    @extend .restaurantCard;
+
+    &::after {
+      content: "Nouveau";
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: hsl(165, 100%, 26%);
+      background-color: $color-tertiary;
+      padding: 6px;
+      font-size: 0.8rem;
+      border-radius: 2px;
+    }
+  }
+}

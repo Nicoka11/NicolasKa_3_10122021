@@ -11,6 +11,8 @@
 @import "components/buttonCTA";
 @import "components/header";
 @import "components/explainCard";
+@import "components/subCategoryTitle";
+@import "components/restaurantCard";
 
 //layouts
 @import "layout/explainList";
@@ -18,7 +20,7 @@
 .components {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  max-width: 360px;
   gap: 10px;
   align-items: center;
 }
