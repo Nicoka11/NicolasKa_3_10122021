@@ -20,6 +20,44 @@
     }
   }
 
+  &__like {
+    position: relative;
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+      & .heart-background {
+        clip-path: circle(120% at 50% 100%);
+      }
+
+      & i:first-child {
+        opacity: 0;
+      }
+    }
+
+    & i {
+      position: absolute;
+      font-size: 1.3rem;
+      margin-right: 10px;
+      color: black;
+      opacity: 1;
+      @include transition-all-base;
+
+      &:first-child {
+        transition-delay: 0.2s;
+      }
+    }
+
+    & .heart-background {
+      @include background-gradient("reverse");
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      clip-path: circle(0% at 50% 100%);
+      @include transition-all-base;
+    }
+  }
+
   &__details {
     padding: 15px;
     display: flex;
@@ -32,11 +70,6 @@
 
     & p {
       @include font-description;
-    }
-
-    & i {
-      font-size: 1.3rem;
-      margin-right: 10px;
     }
   }
 

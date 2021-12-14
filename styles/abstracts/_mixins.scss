@@ -9,3 +9,11 @@
 @mixin box-shadow-base--hover {
   box-shadow: 0px 6px 8px -4px rgba(0, 0, 0, 0.1);
 }
+
+@mixin background-gradient($reversed: "") {
+  @if ($reversed: "reverse") {
+    background-image: linear-gradient($color-primary, $color-secondary);
+  } @else {
+    background-image: linear-gradient($color-secondary, $color-primary);
+  }
+}
