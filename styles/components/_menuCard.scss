@@ -27,6 +27,7 @@
 
   &__content {
     padding: 15px;
+    width: 100%;
   }
 
   &__heading {
@@ -45,7 +46,9 @@
     @include transition-all-base;
 
     &__desc {
+      @include font-description;
       margin-top: 5px;
+      width: 18.4375rem;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;

@@ -1,3 +1,13 @@
-.explainList {
-  counter-reset: explain-list-counter;
+.explain {
+  width: 100%;
+  padding: $paddingDefault;
+
+  &__heading {
+    @include font-homeSectionHeader;
+  }
+
+  &List {
+    counter-reset: explain-list-counter;
+    padding-left: calc($bubbleSize/2);
+  }
 }

@@ -1,17 +1,23 @@
 body {
-    font-family: $Roboto;
+  font-family: $Roboto;
 }
 
-@mixin font-logo {
-    font-family: $Shrikland;
-    font-size: 1.3rem;
+@mixin font-logo($size: 1.6rem) {
+  font-family: $Shrikland;
+  font-size: $size;
 }
 
-@mixin font-description($font-size: 1rem) {
-    font-weight: 300;
-    font-size: $font-size;
+@mixin font-description($font-size: 0.95rem) {
+  font-weight: 400;
+  font-size: $font-size;
 }
 @mixin font-cardTitle($font-size: 1rem) {
-    font-weight: 500;
-    font-size: $font-size;
+  font-weight: 500;
+  font-size: $font-size;
+}
+
+@mixin font-homeSectionHeader($margin-bottom: 25px) {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: $margin-bottom;
 }

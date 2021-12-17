@@ -1,11 +1,12 @@
 .buttonCTA {
   background-image: linear-gradient($color-secondary, $color-primary);
-  padding: 15px 30px;
+  padding: 15px 40px;
   border-radius: 30px;
   color: white;
   @include box-shadow-base;
   width: fit-content;
   transition: all 0.3s ease;
+  margin: 0 auto;
 
   &--secondary {
     @extend .buttonCTA;

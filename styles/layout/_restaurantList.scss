@@ -1,0 +1,12 @@
+.restaurant {
+  padding: $paddingDefault;
+  background-color: $color-lightgrey;
+  &__heading {
+    @include font-homeSectionHeader;
+  }
+
+  &List {
+      display: grid;
+      gap: 20px;
+  }
+}

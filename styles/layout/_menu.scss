@@ -1,0 +1,28 @@
+.menu {
+  position: relative;
+  background-color: $color-lightgrey;
+  margin-top: -50px;
+  border-radius: 35px 35px 0 0;
+  z-index: 200;
+  padding-bottom: 4rem;
+
+  &Heading {
+      padding: 1.7rem 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  &List {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 0 1.1rem;
+
+      &__grid {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+      }
+  }
+}

@@ -1,0 +1,14 @@
+.homeHeading {
+  padding: 3rem 3rem;
+  text-align: center;
+  background-color: $color-lightgrey;
+
+  &__heading {
+    @include font-homeSectionHeader(15px);
+  }
+
+  &__description {
+    @include font-description(1.1rem);
+    margin-bottom: 28px;
+  }
+}
