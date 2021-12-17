@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/main.scss" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OhMyFood</title>
+  </head>
+  <body>
+    <div class="components">
+      <!-- MenuCard -->
+      <article class="menuCard">
+        <div class="menuCard__content">
+          <h3 class="menuCard__heading">Homard et espuma de potiron</h3>
+          <div class="menuCard__infos">
+            <p class="menuCard__infos__desc">
+              Assaisoné à la truffe sur lit de caviar
+            </p>
+            <p class="menuCard__price">20€</p>
+          </div>
+        </div>
+        <div class="menuCard__right">
+          <div class="menuCard__add">
+            <div class="menuCard__checkIcon">
+              <i class="fas fa-check-circle menuCard__checkIcon__icon"></i>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- buttonCTA -->
+      <button class="buttonCTA">Commander</button>
+      <!-- buttonCTA secondary -->
+      <button class="buttonCTA--secondary">Explorer nos restaurants</button>
+      <!-- header -->
+      <header class="header">
+        <p class="logo">ohmyfood</p>
+      </header>
+      <!-- header secondary -->
+      <header class="header">
+        <p class="logo">ohmyfood</p>
+        <a href="index.html" class="header__backBtn">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+      </header>
+      <!-- explain card -->
+      <ul class="explainList">
+        <li class="explainCard">
+          <p class="explainCard__text">
+            <span class="explainCard__text__icon"
+              ><i class="fas fa-mobile-alt"></i></span
+            >Choissisez un restaurant
+          </p>
+        </li>
+        <li class="explainCard">
+          <p class="explainCard__title">
+            <span class="explainCard__text__icon"
+              ><i class="fas fa-list-ul"></i></span
+            >Composez votre menu
+          </p>
+        </li>
+        <li class="explainCard--active">
+          <p class="explainCard__text">
+            <span class="explainCard__text__icon"
+              ><i class="fas fa-store"></i></span
+            >Dégustez au restaurant
+          </p>
+        </li>
+      </ul>
+      <!-- restaurant card -->
+      <a href="#">
+        <article class="restaurantCard">
+          <div class="restaurantCard__image">
+            <img
+            src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="Restaurant la palette du goût"
+            />
+          </div>
+          <div class="restaurantCard__details">
+            <div>
+              <h3>La palette du gout</h3>
+              <p>Menilmontant</p>
+            </div>
+            <div class="restaurantCard__like">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart heart-background"></i>
+            </div>
+          </div>
+        </article>
+      </a>
+      <!-- New card -->
+      <article class="restaurantCard--new">
+        <div class="restaurantCard__image">
+          <img
+            src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            alt="Restaurant la palette du goût"
+          />
+        </div>
+        <div class="restaurantCard__details">
+          <div>
+            <h3>La palette du gout</h3>
+            <p>Menilmontant</p>
+          </div>
+          <div class="restaurantCard__like">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart heart-background"></i>
+          </div>
+        </div>
+      </article>
+      <!-- sub catergory -->
+      <h2 class="subCategoryTitle">desserts</h2>
+      <!-- location -->
+      <p class="locationBar">
+        <i class="fas fa-map-marker-alt"></i>Paris, Belleville
+      </p>
+      <!-- restaurantImage -->
+      <div class="restaurantImage">
+        <img
+          src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="restaurant-image"
+        />
+      </div>
+      <!-- footer -->
+      <footer>
+        <p class="footer__logo">ohmyfood</p>
+        <ul class="footerList">
+          <li class="footerList__li">
+            <a href="#"
+              ><i class="fas fa-utensils"></i>Proposer un restaurant</a
+            >
+          </li>
+          <li class="footerList__li">
+            <a href="#"
+              ><i class="fas fa-hands-helping"></i>Devenir partenaire</a
+            >
+          </li>
+          <li class="footerList__li"><a href="#">Mentions légales</a></li>
+          <li class="footerList__li"><a href="#">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

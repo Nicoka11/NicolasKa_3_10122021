@@ -1,0 +1,29 @@
+footer {
+  background-color: $color-darkgrey;
+  width: 100%;
+  color: white;
+  padding: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__logo {
+  @include font-logo(1rem);
+  margin-bottom: 15px;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+
+  & li {
+    cursor: pointer;
+
+    & i {
+      margin-right: 10px;
+    }
+  }
+}

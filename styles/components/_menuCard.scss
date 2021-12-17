@@ -1,11 +1,11 @@
 .menuCard {
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
   border-radius: 15px;
   box-shadow: 0px 6px 8px -3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
+  background-color: white;
   cursor: pointer;
 
   &:hover {
@@ -71,7 +71,7 @@
     font-size: 1.65rem;
     height: 100%;
     width: $checkbox-width;
-    right: -80px;
+    right: -$checkbox-width;
     @include transition-all-base;
 
     &__icon {
