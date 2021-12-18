@@ -5,7 +5,7 @@
   color: white;
   @include box-shadow-base;
   width: fit-content;
-  transition: all 0.3s ease;
+  @include transition-all-base;
   margin: 0 auto;
 
   &--secondary {
@@ -15,7 +15,12 @@
 
   &:hover {
     transform: translateY(-2px);
+    background-image: linear-gradient(
+      lighten($color-secondary, 4),
+      lighten($color-primary, 4)
+    );
     @include box-shadow-base--hover;
+    @include transition-all-base;
   }
 
   &:active {
