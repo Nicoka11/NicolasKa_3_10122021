@@ -7,7 +7,7 @@ body {
   font-size: $size;
 }
 
-@mixin font-description($font-size: 0.95rem) {
+@mixin font-description($font-size: 0.9rem) {
   font-weight: 400;
   font-size: $font-size;
 }
