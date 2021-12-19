@@ -35,8 +35,22 @@ html {
   position: relative;
   min-height: 100%;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  
+  @media (prefers-reduced-motion) {
+    scroll-behavior: auto;
+  }
 }
 
 body {
-  margin: 0 0 190px;
+  margin: 0 0 192px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin: 0 0 154px;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }

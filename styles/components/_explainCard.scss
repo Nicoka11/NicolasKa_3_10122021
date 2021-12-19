@@ -46,3 +46,12 @@ $bubbleSize: 20px;
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-laptop) {
+  .explainCard {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+}

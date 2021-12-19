@@ -24,6 +24,7 @@
     <header class="header">
       <p class="logo">ohmyfood</p>
     </header>
+    <div class="container">
     <p class="locationBar">
       <i class="fas fa-map-marker-alt"></i>Paris, Belleville
     </p>
@@ -32,7 +33,9 @@
       <p class="homeHeading__description">
         Découvrez des restaurants d'exception, séléctionnés par nos soins.
       </p>
-      <button class="buttonCTA--secondary">Explorer nos restaurants</button>
+      <a class="buttonCTA--secondary" href="#restaurants">
+        Explorer nos restaurants
+      </a>
     </section>
     <section class="explain">
       <h2 class="explain__heading">Fonctionnement</h2>
@@ -60,7 +63,7 @@
         </li>
       </ul>
     </section>
-    <section class="restaurant">
+    <section class="restaurant" id="restaurants">
       <h2 class="restaurant__heading">Restaurants</h2>
       <div class="restaurantList">
         <article class="restaurantCard--new">
@@ -154,18 +157,25 @@
         </article>
       </div>
     </section>
+  </div>
     <footer>
-      <p class="footer__logo">ohmyfood</p>
-      <ul class="footerList">
-        <li class="footerList__li">
-          <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-        </li>
-        <li class="footerList__li">
-          <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
-        </li>
-        <li class="footerList__li"><a href="#">Mentions légales</a></li>
-        <li class="footerList__li"><a href="#">Contact</a></li>
-      </ul>
+      <div class="footerContent">
+        <p class="footer__logo">ohmyfood</p>
+        <ul class="footerList">
+          <li class="footerList__li">
+            <a href="#"
+              ><i class="fas fa-utensils"></i>Proposer un restaurant</a
+            >
+          </li>
+          <li class="footerList__li">
+            <a href="#"
+              ><i class="fas fa-hands-helping"></i>Devenir partenaire</a
+            >
+          </li>
+          <li class="footerList__li"><a href="#">Mentions légales</a></li>
+          <li class="footerList__li"><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

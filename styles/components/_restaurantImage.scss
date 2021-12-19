@@ -5,3 +5,9 @@
   max-height: 250px;
   z-index: -1;
 }
+
+@media screen and (min-width: $breakpoint-laptop) {
+  .restaurantImage {
+    overflow: hidden;
+  }
+}

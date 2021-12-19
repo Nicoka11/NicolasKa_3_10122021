@@ -1,9 +1,11 @@
 .buttonCTA {
+  display: inline-block;
   background-image: linear-gradient($color-secondary, $color-primary);
   padding: 15px 40px;
   border-radius: 30px;
   color: white;
   @include box-shadow-base;
+  height: fit-content;
   width: fit-content;
   @include transition-all-base;
   margin: 0 auto;

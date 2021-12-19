@@ -8,6 +8,12 @@ footer {
   left: 0;
 }
 
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
 .footer__logo {
   @include font-logo(1rem);
   margin-bottom: 15px;
@@ -25,5 +31,14 @@ footer {
     & i {
       margin-right: 10px;
     }
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .footerContent {
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
   }
 }

@@ -7,7 +7,20 @@
   }
 
   &List {
+    display: flex;
+    flex-direction: column;
     counter-reset: explain-list-counter;
     padding-left: calc($bubbleSize/2);
+  }
+}
+
+@media screen and (min-width: $breakpoint-laptop) {
+  .explain {
+    padding: $paddingDefault-tablet;
+
+    &List {
+      flex-direction: row;
+      gap: 40px;
+    }
   }
 }
