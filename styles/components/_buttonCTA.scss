@@ -9,6 +9,7 @@
   width: fit-content;
   @include transition-all-base;
   margin: 0 auto;
+  cursor: pointer;
 
   &--secondary {
     @extend .buttonCTA;

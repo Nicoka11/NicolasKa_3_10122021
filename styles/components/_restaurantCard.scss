@@ -3,6 +3,14 @@
   border-radius: 15px;
   width: 100%;
   @include box-shadow-base;
+  cursor: pointer;
+  @include transition-all-base;
+
+  &:hover {
+    transform: translateY(-2px);
+    @include box-shadow-base--hover;
+    @include transition-all-base;
+  }
 
   &__image {
     overflow: hidden;
