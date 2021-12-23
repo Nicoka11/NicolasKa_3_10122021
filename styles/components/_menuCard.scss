@@ -81,3 +81,17 @@
     }
   }
 }
+
+@media screen and (min-width: $breakpoint-tablet) {
+  .menuCard {
+    &:hover {
+      .menuCard__heading {
+        max-width: calc(340px - $checkbox-width);
+      }
+    }
+
+    &__heading {
+      max-width: 340px;
+    }
+  }
+}

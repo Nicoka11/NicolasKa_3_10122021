@@ -173,9 +173,36 @@
             >
           </li>
           <li class="footerList__li"><a href="#">Mentions légales</a></li>
-          <li class="footerList__li"><a href="#">Contact</a></li>
+          <li class="footerList__li">
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
+          </li>
         </ul>
       </div>
     </footer>
+    <div class="loadingScreen">
+      <div class="loadingSpinner">
+        <div class="loadingSpinner__loader">
+          <svg class="loadingSpinner__circular" viewbox="25 25 50 50">
+            <circle
+              class="loadingSpinner__path"
+              cx="50"
+              cy="50"
+              r="20"
+              fill="none"
+              stroke-width="5"
+              stroke-miterlimit="10"
+            />
+          </svg>
+        </div>
+        <p class="loadingSpinner__caption">
+          chargement
+          <span
+            ><span class="progress-point-1">.</span
+            ><span class="progress-point-2">.</span
+            ><span class="progress-point-3">.</span>
+          </span>
+        </p>
+      </div>
+    </div>
   </body>
 </html>

@@ -16,12 +16,14 @@
 @import "components/locationBar";
 @import "components/footer";
 @import "components/restaurantImage";
+@import "components/loadingSpinner";
 
 //layouts
 @import "layout/explainList";
 @import "layout/homeHeading";
 @import "layout/restaurantList";
 @import "layout/menu";
+@import "layout/loadingScreen";
 
 .components {
   display: flex;
@@ -52,6 +54,7 @@ body {
 
 .container {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
