@@ -1,14 +1,11 @@
 {
   "name": "open-classrooms-p3",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
-    "preview": "vite preview"
+    "watch": "sass --watch styles/main.scss styles/main.css & browser-sync start --server --files --watch \"styles/main.css\""
   },
   "devDependencies": {
-    "sass": "^1.44.0",
-    "vite": "^2.7.0"
-  },
-  "dependencies": {}
+    "browser-sync": "^2.27.7",
+    "sass": "^1.44.0"
+  }
 }
