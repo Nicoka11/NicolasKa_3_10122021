@@ -2,7 +2,7 @@ const { resolve } = require("path");
 const { defineConfig } = require("vite");
 
 module.exports = defineConfig({
-  base: "NicolasKa_3_10122021/",
+  base: "/NicolasKa_3_10122021/",
   build: {
     rollupOptions: {
       input: {
