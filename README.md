@@ -7,6 +7,6 @@ If you want to test the code locally:
 
 The file deploy.sh automatically updates the github-pages branch, then github re-deploys the site on his own.
 
-ViteJs is a dev-server/builder that I use to have hot module replacement, it also supports sass and scss files natively (which is quite handy here)
+ViteJs is a dev-server/builder that I use to have hot module replacement, it also supports sass and scss files natively (which is quite handy here):<br> https://vitejs.dev/
 
 Thank you :)
